@@ -1,0 +1,16 @@
+@TaskTrackerApi_HostAddress = http://localhost:5270
+
+GET {{TaskTrackerApi_HostAddress}}/api/tasks
+Accept: application/json
+
+###
+
+POST {{TaskTrackerApi_HostAddress}}/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Finish graduate application",
+  "description": "Push .NET project to GitHub",
+  "priority": "High",
+  "dueDate": "2026-04-30T18:00:00Z"
+}
